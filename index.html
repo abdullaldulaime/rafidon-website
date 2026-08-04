@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RAFIDON</title>
+<title>RAFIDON | Coming Soon</title>
 
 <style>
 
@@ -16,52 +16,103 @@
 }
 
 body{
-    font-family:Tahoma, Arial, sans-serif;
+
+    font-family:Tahoma,Arial,sans-serif;
     color:#fff;
-    text-align:center;
+
+    background:
+        linear-gradient(rgba(3,12,28,.55),rgba(3,12,28,.75)),
+        url("photo.luch");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    min-height:100vh;
-
-    background-image: url("background.png.jpeg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    overflow:hidden;
-}
-
-/* طبقة تغميق فوق الخلفية */
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    background:rgba(5,15,35,.60);
-    z-index:-1;
 }
 
 .container{
-    padding:30px;
+
+    width:90%;
+    max-width:900px;
+    text-align:center;
+
 }
 
-img{
-    width:320px;
-    max-width:90%;
+.logo{
+
+    width:170px;
+    max-width:45%;
+    height:auto;
     margin-bottom:35px;
+
 }
 
 h1{
-    font-size:80px;
-    margin-bottom:20px;
-    font-weight:bold;
+
+    font-size:72px;
+    margin-bottom:15px;
+    text-shadow:0 4px 15px rgba(0,0,0,.6);
+
 }
 
 p{
+
     font-size:30px;
-    color:#d9d9d9;
     line-height:1.8;
+    margin-bottom:18px;
+    text-shadow:0 3px 10px rgba(0,0,0,.7);
+
+}
+
+small{
+
+    font-size:22px;
+    color:#d9d9d9;
+    letter-spacing:1px;
+    text-shadow:0 3px 10px rgba(0,0,0,.7);
+
+}
+
+@media (max-width:768px){
+
+body{
+    background-attachment:scroll;
+}
+
+.logo{
+
+    width:130px;
+    max-width:50%;
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    font-size:52px;
+
+}
+
+p{
+
+    font-size:22px;
+    line-height:1.7;
+
+}
+
+small{
+
+    font-size:16px;
+
+}
+
 }
 
 </style>
@@ -72,15 +123,17 @@ p{
 
 <div class="container">
 
-    <img src="logo.png.jpeg" alt="RAFIDON Logo">
+<img src="logo.png" class="logo" alt="RAFIDON Logo">
 
-    <h1>قريباً...</h1>
+<h1>قريباً...</h1>
 
-    <p>
-        نعمل على إطلاق موقع رافيدون بحلته الجديدة
-        <br>
-        RAFIDON Enterprise AI & Digital Transformation
-    </p>
+<p>
+نعمل على إطلاق موقع رافيدون بحلته الجديدة
+</p>
+
+<small>
+RAFIDON Enterprise AI & Digital Transformation
+</small>
 
 </div>
 
