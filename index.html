@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RAFIDON</title>
 
 <style>
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#07162f;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Tahoma;
-color:white;
-text-align:center;
+    font-family:Tahoma, Arial, sans-serif;
+    color:#fff;
+    text-align:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background-image:url("background.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+
+/* طبقة تغميق فوق الخلفية */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(5,15,35,.60);
+    z-index:-1;
+}
+
+.container{
+    padding:30px;
 }
 
 img{
-width:220px;
-margin-bottom:30px;
+    width:320px;
+    max-width:90%;
+    margin-bottom:35px;
 }
 
 h1{
-font-size:65px;
-margin-bottom:15px;
+    font-size:80px;
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
 p{
-font-size:28px;
-opacity:.8;
+    font-size:30px;
+    color:#d9d9d9;
+    line-height:1.8;
 }
+
 </style>
 
 </head>
 
 <body>
 
-<div>
-<img src="logo.png.jpeg" width="180">
-<h1>قريباً...</h1>
-<p>نعمل على إطلاق موقع رافيدون بحلته الجديدة</p>
+<div class="container">
+
+    <img src="logo.png.jpeg" alt="RAFIDON Logo">
+
+    <h1>قريباً...</h1>
+
+    <p>
+        نعمل على إطلاق موقع رافيدون بحلته الجديدة
+        <br>
+        RAFIDON Enterprise AI & Digital Transformation
+    </p>
+
 </div>
 
 </body>
+
 </html>
