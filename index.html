@@ -16,17 +16,20 @@
     box-sizing:border-box;
 }
 
+html,
 body{
-
     width:100%;
-    height:100vh;
+    height:100%;
+}
+
+body{
 
     display:flex;
     justify-content:center;
     align-items:center;
 
     background:
-    linear-gradient(rgba(4,10,25,.45),rgba(4,10,25,.65)),
+    linear-gradient(rgba(4,10,25,.35),rgba(4,10,25,.55)),
     url("photo.luch.jpeg");
 
     background-size:cover;
@@ -39,34 +42,17 @@ body{
 }
 
 .container{
-
-    text-align:center;
-
+    width:100%;
+    height:100%;
 }
 
-.logo{
-
-    width:180px;
-    max-width:45vw;
-    height:auto;
-
-    filter:drop-shadow(0 8px 20px rgba(0,0,0,.5));
-
-}
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 body{
 
-    background-position:center;
     background-size:cover;
+    background-position:center;
     background-attachment:scroll;
-
-}
-
-.logo{
-
-    width:130px;
 
 }
 
@@ -79,9 +65,6 @@ body{
 <body>
 
 <div class="container">
-
-<img src="logo.png.jpeg" class="logo" alt="RAFIDON">
-
 </div>
 
 </body>
