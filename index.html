@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RAFIDON | Coming Soon</title>
+<title>RAFIDON</title>
 
 <style>
 
@@ -17,99 +18,54 @@
 
 body{
 
-    font-family:Tahoma,Arial,sans-serif;
-    color:#fff;
-
-    background:
-        linear-gradient(rgba(3,12,28,.55),rgba(3,12,28,.75)),
-        url("photo.luch");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-
     min-height:100vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-}
+    background:
+    linear-gradient(rgba(5,15,35,.45),rgba(5,15,35,.60)),
+    url("photo.luch.jpeg");
 
-.container{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 
-    width:90%;
-    max-width:900px;
-    text-align:center;
+    font-family:Tahoma,Arial,sans-serif;
 
 }
 
 .logo{
 
     width:170px;
-    max-width:45%;
+    max-width:45vw;
     height:auto;
-    margin-bottom:35px;
+
+    filter:drop-shadow(0 8px 25px rgba(0,0,0,.6));
+
+    transition:.3s;
 
 }
 
-h1{
+.logo:hover{
 
-    font-size:72px;
-    margin-bottom:15px;
-    text-shadow:0 4px 15px rgba(0,0,0,.6);
-
-}
-
-p{
-
-    font-size:30px;
-    line-height:1.8;
-    margin-bottom:18px;
-    text-shadow:0 3px 10px rgba(0,0,0,.7);
-
-}
-
-small{
-
-    font-size:22px;
-    color:#d9d9d9;
-    letter-spacing:1px;
-    text-shadow:0 3px 10px rgba(0,0,0,.7);
+    transform:scale(1.05);
 
 }
 
 @media (max-width:768px){
 
 body{
+
     background-attachment:scroll;
+
 }
 
 .logo{
 
-    width:130px;
-    max-width:50%;
-    margin-bottom:25px;
-
-}
-
-h1{
-
-    font-size:52px;
-
-}
-
-p{
-
-    font-size:22px;
-    line-height:1.7;
-
-}
-
-small{
-
-    font-size:16px;
+    width:120px;
 
 }
 
@@ -121,21 +77,7 @@ small{
 
 <body>
 
-<div class="container">
-
-<img src="logo.png" class="logo" alt="RAFIDON Logo">
-
-<h1>قريباً...</h1>
-
-<p>
-نعمل على إطلاق موقع رافيدون بحلته الجديدة
-</p>
-
-<small>
-RAFIDON Enterprise AI & Digital Transformation
-</small>
-
-</div>
+<img src="logo.png" class="logo" alt="RAFIDON">
 
 </body>
 
